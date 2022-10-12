@@ -81,6 +81,8 @@ print("\(area)")*/
 let  curretTemperature = temperature(celsius: 0.0)
 print(curretTemperature.fahrenheit)
 print(curretTemperature.kevlin)*/
+
+
 struct temoperature {
     var celsius: <#type#> = Double
     init(celsius:Double){
@@ -95,3 +97,17 @@ let boiling = Temoperature(fahrenheit:212.0)
 print(curretTemoerature.celsius)
 print(boiling.celsius)
 
+
+
+
+
+class Car: vehicle {
+    var gear = 1
+    override var desription : String {
+        super.description + " in gear \(gear)"
+    }
+}
+let car = Car()
+car.currentSpeed = 25.0
+car.gear = 3
+print ("Car: \(car.desciption) ")
